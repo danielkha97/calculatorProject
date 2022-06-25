@@ -4,10 +4,7 @@ void CalculatorManager::Run()
 {
 	displayMessage();
 	while (_getch() != 'q')
-	{
-		try { Calculator calc; }
-		catch (const char* msg){cout << msg << endl;}
-	}
+		Calculator calc;
 
 }
 void CalculatorManager::displayMessage()
