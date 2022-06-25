@@ -13,7 +13,8 @@ cin -> ignores whitespaces
 
 using std::cout; using std::endl; using std::string; using std::cin;
 class Validator {
-public:
+	friend class Calculator;
+
 	static bool isValidNumber(string& val);
 	static bool isValidOperator(char& input_operator);
 };

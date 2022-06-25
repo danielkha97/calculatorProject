@@ -3,9 +3,9 @@
 bool Validator::isValidNumber(string& val)
 {
 	std::regex intFormat("-?\\d+");
-	std::regex floatFormat("-?\\d+\\.\\d+");
+//	std::regex floatFormat("-?\\d+\\.\\d+");
 
-	if (!std::regex_match(val, intFormat) && !std::regex_match(val, floatFormat))
+	if (!std::regex_match(val, intFormat))// && !std::regex_match(val, floatFormat))
 	{
 		cin.clear();
 		cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
