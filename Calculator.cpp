@@ -20,21 +20,21 @@ void Calculator::inputReceive()
 
 void Calculator::calculateResult(const int& val1, const int& val2, char& input_operator)
 {
-		switch (input_operator) {
-		case '-':
-			cout << "The result is: " << (val1 - val2) << endl;
-			break;
-		case'+':
-			cout << "The result is: " << (val1 + val2) << endl;
-			break;
-		case '*':
-			cout << "The result is: " << (val1 * val2) << endl;
-			break;
-		case'/':
-			if (val2 == 0)
-				throw "\nDivision by Zero, illegal\n";
-			cout << "The result is: " << (val1 / val2) << endl;
-			break;
-		}	
+	switch (input_operator) {
+	case '-':
+		cout << "The result is: " << (val1 - val2) << endl;
+		break;
+	case'+':
+		cout << "The result is: " << (val1 + val2) << endl;
+		break;
+	case '*':
+		cout << "The result is: " << (val1 * val2) << endl;
+		break;
+	case'/':
+		if (val2 == 0)
+			throw "\nDivision by Zero, illegal\n";
+		cout << "The result is: " << (val1 / val2) << endl;
+		break;
+	}
 }
 
