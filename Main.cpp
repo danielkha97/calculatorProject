@@ -3,6 +3,7 @@
 
 int main()
 {
-	Calculator calc;
+	CalculatorManager calc;
+	calc.Run();
 }
 
